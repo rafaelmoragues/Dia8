@@ -10,11 +10,8 @@ namespace Dia8.Models
     {
         public void Recibodatos(string mensaje)
         {
-            Console.WriteLine(mensaje);
-        }
-        public void Muestro()
-        {
-            Console.WriteLine("Guardé los datos en json");
+            Console.WriteLine("Recibi: " + mensaje);
+            Console.WriteLine("Guardé: " + mensaje);
         }
     }
 }

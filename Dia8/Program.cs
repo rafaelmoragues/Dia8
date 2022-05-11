@@ -39,9 +39,8 @@ namespace Dia8
 
         void Ej4()
         {
-            List<Venta> li = new List<Venta>();
             Adapter ad = new Adapter();
-            ad.GuardaEnXML(li); ;
+            ad.EnvioEnXML("Un archivo xml");
         }
         static void Main(string[] args)
         {

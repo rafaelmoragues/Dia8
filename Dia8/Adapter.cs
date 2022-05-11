@@ -11,11 +11,19 @@ namespace Dia8
     {
         Receptor receptor = new Receptor();
 
-        public override void GuardaEnXML(List<Venta> li)
+        public override void EnvioEnXML(string archivoXml)
         {
-            Console.WriteLine("Cambio los datos de XML a JSON");
-            receptor.Recibodatos("Los datos estaban en XML y ahora los recibo en JSON");
-            receptor.Muestro();
+            Console.WriteLine("El adapter recibe: " + archivoXml);
+            string aux = Transformo(archivoXml);
+            Console.WriteLine(aux);
+            receptor.Recibodatos(aux);
+        }
+        private string Transformo(string archivoXml)
+        {
+            archivoXml = "Hago el cambio de XML a JSON en el adapter";
+            Console.WriteLine(archivoXml);
+            string archivoJSON = "Archivo JSON";
+            return archivoJSON;
         }
     }
 }
