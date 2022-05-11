@@ -11,7 +11,7 @@ namespace Dia8
     {
         Receptor receptor = new Receptor();
 
-        public override void EnvioEnXML(string archivoXml)
+        public override void GuardoArchivo(string archivoXml)
         {
             Console.WriteLine("El adapter recibe: " + archivoXml);
             string aux = Transformo(archivoXml);

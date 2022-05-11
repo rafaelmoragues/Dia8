@@ -11,6 +11,6 @@ namespace Dia8
         public List<Venta> ventas= new List<Venta>();
 
 
-        public abstract void EnvioEnXML(string archivoXml);
+        public abstract void GuardoArchivo(string archivoXml);
     }
 }

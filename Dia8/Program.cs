@@ -40,7 +40,7 @@ namespace Dia8
         void Ej4()
         {
             Adapter ad = new Adapter();
-            ad.EnvioEnXML("Un archivo xml");
+            ad.GuardoArchivo("Un archivo xml");
         }
         static void Main(string[] args)
         {
